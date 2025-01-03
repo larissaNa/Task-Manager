@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cadastro.css"> <!-- Adicione seu CSS customizado aqui -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Phortus Leonardo Advocacia</a>
+</nav>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title text-center"><strong>Cadastro</strong></h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Digite seu email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Digite sua senha</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+                        <button type="button" id="registerButton" class="btn btn-custom btn-block" onclick="registerWithEmailAndPassword()">Cadastrar</button>
+                    </form>
+                    <p class="text-center mt-3">Já tem uma conta? <a href="login.html">Entre</a></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2024 Larissa Souza</p>
+    </div>
+</footer>
+
+<!-- Firebase JS SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Seus scripts -->
+<script src="../js/firebaseInit.js"></script>
+<script src="../js/cadastro.js"></script>
+
+</body>
+</html>
